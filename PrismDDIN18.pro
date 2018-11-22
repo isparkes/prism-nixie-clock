@@ -1,4 +1,4 @@
-update=22.04.2018 20:03:17
+update=Mi 21 Nov 2018 21:20:21 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,35 +27,4 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/ian/Downloads/EAGLE-master
-[eeschema/libraries]
-LibName1=DDIN18-rescue
-LibName2=power
-LibName3=device
-LibName4=transistors
-LibName5=conn
-LibName6=linear
-LibName7=adc-dac
-LibName8=memory
-LibName9=xilinx
-LibName10=microcontrollers
-LibName11=dsp
-LibName12=microchip
-LibName13=analog_switches
-LibName14=motorola
-LibName15=texas
-LibName16=intel
-LibName17=audio
-LibName18=interface
-LibName19=digital-audio
-LibName20=philips
-LibName21=display
-LibName22=cypress
-LibName23=siliconi
-LibName24=opto
-LibName25=atmel
-LibName26=contrib
-LibName27=valves
-LibName28=DDIN18
-LibName29=C:/Users/tgdspia1/Dropbox/Shared/Nixie/KiCAD/libraries/ws2812b
-LibName30=C:/Users/tgdspia1/Dropbox/Shared/Nixie/KiCAD/libraries/MC34063A
+LibDir=
