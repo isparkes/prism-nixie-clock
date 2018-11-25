@@ -588,7 +588,7 @@ SDA
 Text Label 5300 9700 0    65   ~ 0
 VCC
 Text Label 14600 3000 0    65   ~ 0
-VCC
+3V3
 Text Label 14100 3850 0    65   ~ 0
 VCC
 Text Label 1250 11000 0    65   ~ 0
@@ -2096,7 +2096,7 @@ Wire Notes Line
 Text Notes 6050 4450 0    60   ~ 0
 Display drivers
 Text Notes 13950 2600 0    60   ~ 0
-I2C interface
+I2C interface (3V3)
 Text Notes 13600 3650 0    60   ~ 0
 Front panel
 Text Label 14700 3800 0    65   ~ 0
