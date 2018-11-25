@@ -2664,4 +2664,6 @@ Wire Wire Line
 Connection ~ 5150 9700
 Wire Wire Line
 	5150 9700 5300 9700
+Text Notes 13500 7400 0    60   ~ 0
+Controller
 $EndSCHEMATC
