@@ -2147,13 +2147,9 @@ Wire Wire Line
 	10050 5900 9800 5900
 Wire Wire Line
 	9800 5900 9800 5850
-Wire Wire Line
-	10150 5400 9800 5400
-Wire Wire Line
-	10150 5500 9800 5500
-Text Label 9800 5400 0    50   ~ 0
+Text Label 9600 5400 0    50   ~ 0
 SCL
-Text Label 9800 5500 0    50   ~ 0
+Text Label 9600 5500 0    50   ~ 0
 SDA
 $Comp
 L Device:C C21
@@ -2179,8 +2175,6 @@ Wire Wire Line
 	11300 5000 10550 5000
 Wire Wire Line
 	10550 5000 10550 5200
-Wire Wire Line
-	10550 5000 10350 5000
 Connection ~ 10550 5000
 Text Label 10350 5000 0    50   ~ 0
 VCC
@@ -2682,4 +2676,49 @@ Wire Wire Line
 Connection ~ 14650 8200
 Wire Wire Line
 	14650 8200 14950 8200
+$Comp
+L PrismDDIN18-rescue:R R25
+U 1 1 5C2469EC
+P 9800 5200
+F 0 "R25" V 9880 5200 50  0000 C CNN
+F 1 "10k" V 9800 5200 50  0000 C CNN
+F 2 "NixieClockMaster:R-0207_2V" V 9730 5200 50  0001 C CNN
+F 3 "" H 9800 5200 50  0000 C CNN
+	1    9800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:R R26
+U 1 1 5C246B2E
+P 10000 5200
+F 0 "R26" V 10080 5200 50  0000 C CNN
+F 1 "10k" V 10000 5200 50  0000 C CNN
+F 2 "NixieClockMaster:R-0207_2V" V 9930 5200 50  0001 C CNN
+F 3 "" H 10000 5200 50  0000 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5400 10000 5400
+Wire Wire Line
+	9600 5500 9800 5500
+Wire Wire Line
+	9800 5350 9800 5500
+Connection ~ 9800 5500
+Wire Wire Line
+	9800 5500 10150 5500
+Wire Wire Line
+	10000 5350 10000 5400
+Connection ~ 10000 5400
+Wire Wire Line
+	10000 5400 10150 5400
+Wire Wire Line
+	10000 5000 10000 5050
+Wire Wire Line
+	10000 5000 10550 5000
+Wire Wire Line
+	10000 5000 9800 5000
+Wire Wire Line
+	9800 5000 9800 5050
+Connection ~ 10000 5000
 $EndSCHEMATC
