@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /data/sdb/prism-direct-drive-in-18/PrismDDIN18.sch)
-    (date "Do 20 Dez 2018 18:23:14 CET")
+    (date "Do 07 Feb 2019 14:19:24 CET")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -354,7 +354,7 @@
     (comp (ref Q7)
       (value Q_PNP_BCE)
       (footprint NixieClockMaster:2N7000_TO92)
-      (libsource (lib PrismDDIN18-rescue) (part Q_PNP_BCE) (description ""))
+      (libsource (lib Device) (part Q_PNP_CBE) (description "PNP transistor, collector/base/emitter"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5937A70F))
     (comp (ref Q6)
@@ -662,6 +662,16 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
+    (libpart (lib Device) (part Q_PNP_CBE)
+      (description "PNP transistor, collector/base/emitter")
+      (docs ~)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) Q_PNP_CBE))
+      (pins
+        (pin (num 1) (name C) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name E) (type passive))))
     (libpart (lib Device) (part R)
       (description Resistor)
       (docs ~)
@@ -902,14 +912,6 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive))))
-    (libpart (lib PrismDDIN18-rescue) (part Q_PNP_BCE)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) Q_PNP_BCE))
-      (pins
-        (pin (num 1) (name B) (type input))
-        (pin (num 2) (name C) (type passive))
-        (pin (num 3) (name E) (type passive))))
     (libpart (lib PrismDDIN18-rescue) (part R)
       (footprints
         (fp R_*)
@@ -1097,7 +1099,7 @@
       (node (ref C12) (pin 2))
       (node (ref C8) (pin 2))
       (node (ref C7) (pin 2))
-      (node (ref Q7) (pin 2))
+      (node (ref Q7) (pin 1))
       (node (ref C19) (pin 2))
       (node (ref RV1) (pin 3))
       (node (ref U5) (pin 4))
@@ -1493,7 +1495,7 @@
     (net (code 121) (name "Net-(D3-Pad2)")
       (node (ref R15) (pin 1))
       (node (ref U2) (pin 2))
-      (node (ref Q7) (pin 1))
+      (node (ref Q7) (pin 2))
       (node (ref D3) (pin 2)))
     (net (code 122) (name "Net-(C19-Pad1)")
       (node (ref U2) (pin 5))
