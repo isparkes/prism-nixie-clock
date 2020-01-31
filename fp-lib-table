@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name nixies-us)(type Legacy)(uri /data/Copy/Nixie/KiCAD/Eagle-and-KiCAD-Nixie-Libs-master/nixies-us.mod)(options "")(descr ""))
+  (lib (name apa-106)(type KiCad)(uri /data/Copy/Nixie/KiCAD/apa-106.pretty)(options "")(descr ""))
+)
