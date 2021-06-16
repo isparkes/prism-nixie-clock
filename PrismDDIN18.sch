@@ -1,85 +1,18 @@
 EESchema Schematic File Version 4
-LIBS:PrismDDIN18-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Direct Drive Arduino Nixie Clock IN-18"
-Date "2017-06-04"
-Rev "Rev 001"
-Comp "Ian's Nixie Clocks"
+Title "Direct Drive Arduino Nixie Clock Z566M WS2812_3535"
+Date "2017-11-08"
+Rev "000"
+Comp "Ian's Nixie Clocks/ AE"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L PrismDDIN18-rescue:IN-18 S10
-U 1 1 58A13ED3
-P 7300 6050
-F 0 "S10" H 7100 6875 45  0000 L BNN
-F 1 "IN-18" H 7300 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 7300 6050 60  0001 C CNN
-F 3 "" H 7300 6050 60  0001 C CNN
-	1    7300 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PrismDDIN18-rescue:IN-18 M1
-U 1 1 58A258F8
-P 6050 6050
-F 0 "M1" H 5850 6875 45  0000 L BNN
-F 1 "IN-18" H 6050 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 6050 6050 60  0001 C CNN
-F 3 "" H 6050 6050 60  0001 C CNN
-	1    6050 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PrismDDIN18-rescue:IN-18 M10
-U 1 1 58A25A60
-P 4800 6050
-F 0 "M10" H 4600 6875 45  0000 L BNN
-F 1 "IN-18" H 4800 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 4800 6050 60  0001 C CNN
-F 3 "" H 4800 6050 60  0001 C CNN
-	1    4800 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PrismDDIN18-rescue:IN-18 S1
-U 1 1 58A25AC1
-P 8600 6050
-F 0 "S1" H 8400 6875 45  0000 L BNN
-F 1 "IN-18" H 8600 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 8600 6050 60  0001 C CNN
-F 3 "" H 8600 6050 60  0001 C CNN
-	1    8600 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PrismDDIN18-rescue:IN-18 H10
-U 1 1 58A25B0C
-P 2200 6050
-F 0 "H10" H 2000 6875 45  0000 L BNN
-F 1 "IN-18" H 2200 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 2200 6050 60  0001 C CNN
-F 3 "" H 2200 6050 60  0001 C CNN
-	1    2200 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PrismDDIN18-rescue:IN-18 H1
-U 1 1 58A259F3
-P 3550 6050
-F 0 "H1" H 3350 6875 45  0000 L BNN
-F 1 "IN-18" H 3550 6050 45  0001 L BNN
-F 2 "NixieClockMaster:nixies-us-IN-18" H 3550 6050 60  0001 C CNN
-F 3 "" H 3550 6050 60  0001 C CNN
-	1    3550 6050
-	1    0    0    -1  
-$EndComp
 $Comp
 L PrismDDIN18-rescue:R R1
 U 1 1 59343AA6
@@ -91,8 +24,6 @@ F 3 "" H 2600 5600 50  0000 C CNN
 	1    2600 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 5950 2600 5950
 Wire Wire Line
 	2600 5950 2600 5750
 Wire Wire Line
@@ -182,82 +113,30 @@ Wire Wire Line
 	7650 5050 7650 5450
 Connection ~ 6400 5050
 Connection ~ 7650 5050
-NoConn ~ 8900 6150
-NoConn ~ 7600 6150
-NoConn ~ 6350 6150
-NoConn ~ 5100 6150
-NoConn ~ 3850 6150
-NoConn ~ 2500 6150
 Wire Wire Line
 	2600 5050 3900 5050
 $Comp
-L power:GND #PWR01
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR01
 U 1 1 59344759
-P 2450 8500
-F 0 "#PWR01" H 2450 8250 50  0001 C CNN
-F 1 "GND" H 2450 8350 50  0000 C CNN
-F 2 "" H 2450 8500 50  0000 C CNN
-F 3 "" H 2450 8500 50  0000 C CNN
-	1    2450 8500
+P 3500 8500
+F 0 "#PWR01" H 3500 8250 50  0001 C CNN
+F 1 "GND" H 3500 8350 50  0000 C CNN
+F 2 "" H 3500 8500 50  0000 C CNN
+F 3 "" H 3500 8500 50  0000 C CNN
+	1    3500 8500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
-U 1 1 593447A1
-P 3750 8500
-F 0 "#PWR02" H 3750 8250 50  0001 C CNN
-F 1 "GND" H 3750 8350 50  0000 C CNN
-F 2 "" H 3750 8500 50  0000 C CNN
-F 3 "" H 3750 8500 50  0000 C CNN
-	1    3750 8500
+L PrismDDIN18-rescue:C_Small C1
+U 1 1 59344F5C
+P 2600 8000
+F 0 "C1" H 2400 8050 50  0000 L CNN
+F 1 "100nF" H 2350 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2600 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 2600 8000 50  0001 C CNN
+	1    2600 8000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5934482F
-P 5050 8500
-F 0 "#PWR03" H 5050 8250 50  0001 C CNN
-F 1 "GND" H 5050 8350 50  0000 C CNN
-F 2 "" H 5050 8500 50  0000 C CNN
-F 3 "" H 5050 8500 50  0000 C CNN
-	1    5050 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 593448BE
-P 6350 8500
-F 0 "#PWR04" H 6350 8250 50  0001 C CNN
-F 1 "GND" H 6350 8350 50  0000 C CNN
-F 2 "" H 6350 8500 50  0000 C CNN
-F 3 "" H 6350 8500 50  0000 C CNN
-	1    6350 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 59344984
-P 7650 8500
-F 0 "#PWR05" H 7650 8250 50  0001 C CNN
-F 1 "GND" H 7650 8350 50  0000 C CNN
-F 2 "" H 7650 8500 50  0000 C CNN
-F 3 "" H 7650 8500 50  0000 C CNN
-	1    7650 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 59344AA9
-P 8950 8500
-F 0 "#PWR06" H 8950 8250 50  0001 C CNN
-F 1 "GND" H 8950 8350 50  0000 C CNN
-F 2 "" H 8950 8500 50  0000 C CNN
-F 3 "" H 8950 8500 50  0000 C CNN
-	1    8950 8500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 7850 7650 7850
 Text Notes 800  9350 0    70   ~ 0
 Power regulator
 $Comp
@@ -267,7 +146,7 @@ P 2400 10500
 F 0 "C11" H 2200 10300 70  0000 L BNN
 F 1 "100nF" H 2050 10500 70  0000 L BNN
 F 2 "NixieClockMaster:C025-024X044" H 2390 10290 70  0001 L TNN
-F 3 "" H 2400 10500 60  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/PZTAP_DATA_EN.pdf" H 2400 10500 60  0001 C CNN
 	1    2400 10500
 	1    0    0    1   
 $EndComp
@@ -276,16 +155,16 @@ L PrismDDIN18-rescue:CP C12
 U 1 1 5934597D
 P 4450 10200
 F 0 "C12" H 4500 10050 70  0000 L BNN
-F 1 "220uF 10V" V 4400 9800 70  0000 L BNN
+F 1 "220uF 10V" V 4320 9850 70  0000 L BNN
 F 2 "NixieClockMaster:C_Radial_D6.3_L11.2_P2.5" H 4440 9990 70  0001 L TNN
-F 3 "" H 4450 10200 60  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/EEUFM_SERIES_ENG_TDS.pdf" H 4450 10200 60  0001 C CNN
 F 4 "Value" H 4300 9900 60  0001 C CNN "Fieldname"
 F 5 "+" V 4427 10216 50  0000 L BNN "Field5"
 	1    4450 10200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #GND08
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND08
 U 1 1 59345981
 P 5100 10800
 F 0 "#GND08" H 5000 10700 70  0001 L BNN
@@ -320,12 +199,12 @@ $EndComp
 $Comp
 L PrismDDIN18-rescue:RCL_R-EU_0207_2V R9
 U 1 1 59345999
-P 14700 4100
-F 0 "R9" H 14600 4150 70  0000 L BNN
-F 1 "10k" H 14600 3950 70  0000 L BNN
-F 2 "NixieClockMaster:R-0207_2V" H 14690 3890 70  0001 L TNN
-F 3 "" H 14700 4100 60  0001 C CNN
-	1    14700 4100
+P 14750 5500
+F 0 "R9" H 14650 5550 70  0000 L BNN
+F 1 "10k" H 14650 5350 70  0000 L BNN
+F 2 "NixieClockMaster:R-0207_2V" H 14740 5290 70  0001 L TNN
+F 3 "" H 14750 5500 60  0001 C CNN
+	1    14750 5500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -342,19 +221,19 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 SV4
 U 1 1 593459A4
-P 14200 3100
-F 0 "SV4" H 14150 2700 70  0000 L BNN
-F 1 "CONN_RTC" H 14050 3350 70  0000 L BNN
-F 2 "NixieClockMaster:Header_MA04-1" H 14190 2890 70  0001 L TNN
-F 3 "" H 14200 3100 60  0001 C CNN
-	1    14200 3100
+P 14100 2400
+F 0 "SV4" H 14050 2000 70  0000 L BNN
+F 1 "CONN_RTC" H 13950 2650 70  0000 L BNN
+F 2 "NixieClockMaster:Header_MA04-1" H 14090 2190 70  0001 L TNN
+F 3 "" H 14100 2400 60  0001 C CNN
+	1    14100 2400
 	-1   0    0    1   
 $EndComp
 Text Label 13050 8500 0    65   ~ 0
 BTN1
 Text Label 14100 4050 0    65   ~ 0
 BTN1
-Text Label 14900 4400 0    65   ~ 0
+Text Label 14950 5800 0    65   ~ 0
 DLS
 Text Label 14950 8800 2    65   ~ 0
 DLS
@@ -362,19 +241,19 @@ Text Label 14100 4150 0    65   ~ 0
 DLS
 Text Label 14100 4250 0    65   ~ 0
 GND
-Text Label 14600 2900 0    65   ~ 0
+Text Label 14500 2200 0    65   ~ 0
 GND
 Text Label 13050 8700 0    65   ~ 0
 SCL
-Text Label 14600 3200 0    65   ~ 0
+Text Label 14500 2500 0    65   ~ 0
 SCL
 Text Label 13050 8600 0    65   ~ 0
 SDA
-Text Label 14600 3100 0    65   ~ 0
+Text Label 14500 2400 0    65   ~ 0
 SDA
 Text Label 5300 9700 0    65   ~ 0
 VCC
-Text Label 14600 3000 0    65   ~ 0
+Text Label 14500 2300 0    65   ~ 0
 3V3
 Text Label 14100 3850 0    65   ~ 0
 VCC
@@ -382,7 +261,7 @@ Text Label 1250 11000 0    65   ~ 0
 VCC
 Text Label 2500 9700 0    65   ~ 0
 VIN
-Text Label 14700 4300 3    20   ~ 0
+Text Label 14750 5700 3    20   ~ 0
 DLS
 $Comp
 L PrismDDIN18-rescue:TEST_1P W1
@@ -413,7 +292,7 @@ P 1650 10200
 F 0 "D1" H 1650 10300 70  0000 C CNN
 F 1 "UF4007" H 1650 10050 70  0000 C CNN
 F 2 "NixieClockMaster:Diode_DO-41_1N4001" H 1650 10200 50  0001 C CNN
-F 3 "" H 1650 10200 50  0000 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/NKDIOTEC_FAST_RECOVERY_GRD_UF400X_DE_EN.pdf" H 1650 10200 50  0001 C CNN
 	1    1650 10200
 	-1   0    0    1   
 $EndComp
@@ -426,25 +305,25 @@ PWR_GND_IN
 $Comp
 L PrismDDIN18-rescue:BARREL_JACK CON1
 U 1 1 593459B5
-P 13900 2000
-F 0 "CON1" H 13900 2250 50  0000 C CNN
-F 1 "BARREL_JACK" H 13900 1800 50  0000 C CNN
-F 2 "NixieClockMaster:BARREL_JACK" H 13900 2000 50  0001 C CNN
-F 3 "" H 13900 2000 50  0000 C CNN
-	1    13900 2000
+P 13800 1300
+F 0 "CON1" H 13800 1550 50  0000 C CNN
+F 1 "BARREL_JACK" H 13800 1100 50  0000 C CNN
+F 2 "NixieClockMaster:BARREL_JACK" H 13800 1300 50  0001 C CNN
+F 3 "" H 13800 1300 50  0000 C CNN
+	1    13800 1300
 	1    0    0    -1  
 $EndComp
-Text Label 14950 1900 0    60   ~ 0
+Text Label 14850 1200 0    60   ~ 0
 PWR_INPUT
 $Comp
-L power:GND #GND011
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND011
 U 1 1 593459B6
-P 14950 2200
-F 0 "#GND011" H 14850 2100 70  0001 L BNN
-F 1 "GND" H 14850 2000 70  0000 L BNN
-F 2 "" H 14950 2200 60  0001 C CNN
-F 3 "" H 14950 2200 60  0001 C CNN
-	1    14950 2200
+P 14850 1500
+F 0 "#GND011" H 14750 1400 70  0001 L BNN
+F 1 "GND" H 14750 1300 70  0000 L BNN
+F 2 "" H 14850 1500 60  0001 C CNN
+F 3 "" H 14850 1500 60  0001 C CNN
+	1    14850 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -453,8 +332,8 @@ U 1 1 593459B8
 P 3150 10100
 F 0 "IC1" H 2750 10450 50  0000 L CNN
 F 1 "LM2596T-5" H 2750 10350 50  0000 L CNN
-F 2 "NixieClockMaster:TO220-5A" H 3450 9850 50  0001 C CIN
-F 3 "" H 3150 10100 50  0000 C CNN
+F 2 "NixieClockMaster:TO220-5A_H" H 3450 9850 50  0001 C CIN
+F 3 "https://www.mouser.de/datasheet/2/308/LM2596-D-106251.pdf" H 3150 10100 50  0001 C CNN
 	1    3150 10100
 	1    0    0    -1  
 $EndComp
@@ -465,7 +344,7 @@ P 3800 10450
 F 0 "D2" H 3900 10300 70  0000 C CNN
 F 1 "1N5819" H 3800 10600 70  0000 C CNN
 F 2 "NixieClockMaster:Diode_DO-41_1N4001" H 3800 10450 50  0001 C CNN
-F 3 "" H 3800 10450 50  0000 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/A400/1N5817_1N5718_1N5819_CDIL.pdf" H 3800 10450 50  0001 C CNN
 	1    3800 10450
 	0    1    1    0   
 $EndComp
@@ -476,7 +355,7 @@ P 4100 9700
 F 0 "L1" V 4050 9650 70  0000 L BNN
 F 1 "33uH" V 4250 9500 70  0000 L BNN
 F 2 "NixieClockMaster:Inductor-33mH-TH-SMD" H 4090 9490 70  0001 L TNN
-F 3 "" H 4100 9700 60  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/DS_07HCP.pdf" H 4100 9700 60  0001 C CNN
 	1    4100 9700
 	0    -1   -1   0   
 $EndComp
@@ -492,11 +371,9 @@ F 3 "" H 13700 4050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13900 4050 14100 4050
+	14750 5700 14750 5800
 Wire Wire Line
-	14700 4300 14700 4400
-Wire Wire Line
-	14700 4400 14900 4400
+	14750 5800 14950 5800
 Wire Wire Line
 	13900 4150 14100 4150
 Wire Wire Line
@@ -511,7 +388,7 @@ Wire Wire Line
 	1250 10400 1250 10700
 Connection ~ 4450 10700
 Wire Wire Line
-	14400 2900 14600 2900
+	14300 2200 14500 2200
 Wire Wire Line
 	1350 10500 1050 10500
 Wire Wire Line
@@ -519,19 +396,19 @@ Wire Wire Line
 Wire Wire Line
 	4850 10200 4850 10300
 Wire Wire Line
-	14400 3200 14600 3200
+	14300 2500 14500 2500
 Wire Wire Line
-	14400 3100 14600 3100
+	14300 2400 14500 2400
 Wire Wire Line
 	4850 9550 4850 9700
 Wire Wire Line
-	14700 3800 14700 3900
+	14750 5200 14750 5300
 Wire Wire Line
 	4450 9450 4450 9700
 Connection ~ 4850 9700
 Connection ~ 4450 9700
 Wire Wire Line
-	14400 3000 14600 3000
+	14300 2300 14500 2300
 Wire Wire Line
 	1050 10600 1150 10600
 Wire Wire Line
@@ -550,17 +427,17 @@ Wire Wire Line
 Wire Wire Line
 	5350 10700 5350 10600
 Wire Wire Line
-	13900 4250 14100 4250
+	13900 4250 14000 4250
 Wire Wire Line
 	1500 10200 1350 10200
 Wire Wire Line
-	14200 1900 14950 1900
+	14100 1200 14850 1200
 Wire Wire Line
-	14200 2000 14200 2100
+	14100 1300 14100 1400
 Wire Wire Line
-	14200 2100 14950 2100
+	14100 1400 14850 1400
 Wire Wire Line
-	14950 2100 14950 2200
+	14850 1400 14850 1500
 Wire Wire Line
 	1800 10200 1900 10200
 Wire Wire Line
@@ -603,12 +480,8 @@ Text Label 13050 8400 0    60   ~ 0
 PIR
 Text Notes 10250 6700 0    60   ~ 0
 RTC (option)
-Wire Notes Line
-	12850 2100 12900 2100
-Text Notes 14050 1550 0    60   ~ 0
+Text Notes 13950 850  0    60   ~ 0
 Barrel Jack Input
-Wire Notes Line
-	12900 2550 12950 2550
 Wire Notes Line
 	450  9000 11450 9000
 Wire Notes Line
@@ -616,49 +489,27 @@ Wire Notes Line
 $Comp
 L PrismDDIN18-rescue:TEST_1P W3
 U 1 1 593459E3
-P 7950 9900
-F 0 "W3" H 7950 10170 50  0000 C CNN
-F 1 "HV" H 7950 10100 50  0000 C CNN
-F 2 "NixieClockMaster:TESTPAD_P1-13" H 8150 9900 50  0001 C CNN
-F 3 "" H 8150 9900 50  0000 C CNN
-	1    7950 9900
+P 7950 10060
+F 0 "W3" H 7950 10330 50  0000 C CNN
+F 1 "HV" H 7950 10260 50  0000 C CNN
+F 2 "NixieClockMaster:TESTPAD_P1-13" H 8150 10060 50  0001 C CNN
+F 3 "" H 8150 10060 50  0000 C CNN
+	1    7950 10060
 	1    0    0    -1  
 $EndComp
 Connection ~ 5350 10700
-Text Label 10250 8150 0    60   ~ 0
+Text Label 10250 7850 0    60   ~ 0
 LED_DATA
 Text Label 13050 8800 0    60   ~ 0
 LED_DATA
-Wire Wire Line
-	3350 7600 3400 7600
-Text Label 3400 7600 0    60   ~ 0
-VCC
-Wire Wire Line
-	4650 7600 4700 7600
-Wire Wire Line
-	5950 7600 6000 7600
-Text Label 4700 7600 0    60   ~ 0
-VCC
-Text Label 6000 7600 0    60   ~ 0
-VCC
-Wire Wire Line
-	7250 7600 7300 7600
-Wire Wire Line
-	8550 7600 8600 7600
-Text Label 7300 7600 0    60   ~ 0
-VCC
-Text Label 8600 7600 0    60   ~ 0
-VCC
-Wire Wire Line
-	9850 7600 9900 7600
-Text Label 9900 7600 0    60   ~ 0
+Text Label 2500 7600 2    60   ~ 0
 VCC
 $Comp
-L power:PWR_FLAG #FLG012
+L PrismDDIN18-rescue:PWR_FLAG-power-PrismDDZ566M-rescue #FLG012
 U 1 1 5935CC27
 P 2100 9800
 F 0 "#FLG012" H 2100 9895 50  0001 C CNN
-F 1 "PWR_FLAG" H 2100 9980 50  0000 C CNN
+F 1 "PWR_FLAG" H 1940 9960 50  0000 C CNN
 F 2 "" H 2100 9800 50  0000 C CNN
 F 3 "" H 2100 9800 50  0000 C CNN
 	1    2100 9800
@@ -667,10 +518,10 @@ $EndComp
 Wire Wire Line
 	2100 9800 2100 9850
 Wire Wire Line
-	2100 9850 2400 9850
+	2100 9850 2250 9850
 Connection ~ 2400 9850
 $Comp
-L power:PWR_FLAG #FLG013
+L PrismDDIN18-rescue:PWR_FLAG-power-PrismDDZ566M-rescue #FLG013
 U 1 1 5935FCF8
 P 5650 10550
 F 0 "#FLG013" H 5650 10645 50  0001 C CNN
@@ -689,7 +540,7 @@ P 1900 10450
 F 0 "C16" H 1650 10300 70  0000 L BNN
 F 1 "220uF 35V" H 1600 10000 70  0000 L BNN
 F 2 "NixieClockMaster:C_Radial_D6.3_L11.2_P2.5" H 1890 10240 70  0001 L TNN
-F 3 "" H 1900 10450 60  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/EEUFM_SERIES_ENG_TDS.pdf" H 1900 10450 60  0001 C CNN
 F 4 "Value" H 1750 10150 60  0001 C CNN "Fieldname"
 F 5 "+" V 1877 10466 50  0000 L BNN "Field5"
 	1    1900 10450
@@ -701,9 +552,33 @@ Connection ~ 1900 10200
 Wire Wire Line
 	1900 10600 1900 10700
 Connection ~ 1900 10700
-Text Label 9800 9950 0    60   ~ 0
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND014
+U 1 1 593720C0
+P 9690 10340
+F 0 "#GND014" H 9590 10240 70  0001 L BNN
+F 1 "GND" H 9590 10140 70  0000 L BNN
+F 2 "" H 9690 10340 60  0001 C CNN
+F 3 "" H 9690 10340 60  0001 C CNN
+	1    9690 10340
+	1    0    0    -1  
+$EndComp
+Text Label 10550 9850 0    60   ~ 0
 VIN
-Text Label 7800 9950 2    60   ~ 0
+$Comp
+L PrismDDIN18-rescue:CP C17
+U 1 1 593751E5
+P 10110 10060
+F 0 "C17" H 10210 10160 70  0000 L BNN
+F 1 "220uF 35V" H 10090 9670 70  0000 L BNN
+F 2 "NixieClockMaster:C_Radial_D6.3_L11.2_P2.5" H 10100 9850 70  0001 L TNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/EEUFM_SERIES_ENG_TDS.pdf" H 10110 10060 60  0001 C CNN
+F 4 "Value" H 9960 9760 60  0001 C CNN "Fieldname"
+F 5 "+" V 10087 10076 50  0000 L BNN "Field5"
+	1    10110 10060
+	1    0    0    -1  
+$EndComp
+Text Label 7710 10110 0    60   ~ 0
 HV
 Wire Wire Line
 	1050 10300 1150 10300
@@ -718,7 +593,7 @@ Text Label 2300 5050 0    60   ~ 0
 HV
 Wire Notes Line
 	6950 9000 6950 11200
-Text Notes 7200 9250 0    70   ~ 0
+Text Notes 8330 9470 0    70   ~ 0
 High Voltage Generator
 Wire Notes Line
 	11450 6600 11450 11200
@@ -1132,7 +1007,7 @@ DATA2
 Text Label 12100 2300 0    60   ~ 0
 CLK
 $Comp
-L power:GND #GND015
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND015
 U 1 1 59990A97
 P 12050 1650
 F 0 "#GND015" H 11950 1550 70  0001 L BNN
@@ -1143,7 +1018,7 @@ F 3 "" H 12050 1650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 12100 2600 0    60   ~ 0
-VSup
+VIN
 Wire Wire Line
 	8750 1500 8900 1500
 Wire Wire Line
@@ -1172,7 +1047,7 @@ DATA2
 Text Label 8950 2300 0    60   ~ 0
 CLK
 $Comp
-L power:GND #GND016
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND016
 U 1 1 59990F81
 P 8900 1650
 F 0 "#GND016" H 8800 1550 70  0001 L BNN
@@ -1183,7 +1058,7 @@ F 3 "" H 8900 1650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8950 2600 0    60   ~ 0
-VSup
+VIN
 Text Label 14950 8400 2    60   ~ 0
 DATA1_3V3
 Text Label 14950 8500 2    60   ~ 0
@@ -1314,10 +1189,10 @@ Text Label 7950 6350 0    60   ~ 0
 S1_9
 NoConn ~ 8750 2400
 $Comp
-L PrismDDIN18-rescue:LED D8
+L PrismDDIN18-rescue:LED D7
 U 1 1 5ADCD452
 P 9400 3650
-F 0 "D8" H 9400 3750 50  0000 C CNN
+F 0 "D7" H 9400 3750 50  0000 C CNN
 F 1 "LED" H 9400 3550 50  0000 C CNN
 F 2 "NixieClockMaster:LED-5MM-Centred" H 9400 3650 50  0001 C CNN
 F 3 "" H 9400 3650 50  0001 C CNN
@@ -1325,10 +1200,10 @@ F 3 "" H 9400 3650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PrismDDIN18-rescue:LED D7
+L PrismDDIN18-rescue:LED D8
 U 1 1 5ADCD92D
 P 9650 3650
-F 0 "D7" H 9650 3750 50  0000 C CNN
+F 0 "D8" H 9650 3750 50  0000 C CNN
 F 1 "LED" H 9650 3550 50  0000 C CNN
 F 2 "NixieClockMaster:LED-5MM-Centred" H 9650 3650 50  0001 C CNN
 F 3 "" H 9650 3650 50  0001 C CNN
@@ -1336,21 +1211,21 @@ F 3 "" H 9650 3650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PrismDDIN18-rescue:R R21
+L PrismDDIN18-rescue:R R20
 U 1 1 5ADCE6C6
 P 9400 3250
-F 0 "R21" V 9480 3250 50  0000 C CNN
-F 1 "10k" V 9400 3250 50  0000 C CNN
-F 2 "NixieClockMaster:R-0207_2V" V 9330 3250 50  0001 C CNN
+F 0 "R20" V 9480 3250 50  0000 C CNN
+F 1 "120k" V 9400 3250 50  0000 C CNN
+F 2 "NixieClockMaster:R_Short_P7.62mm_Horizontal" V 9330 3250 50  0001 C CNN
 F 3 "" H 9400 3250 50  0000 C CNN
 	1    9400 3250
 	-1   0    0    1   
 $EndComp
 $Comp
-L PrismDDIN18-rescue:LED D6
+L PrismDDIN18-rescue:LED D5
 U 1 1 5ADCED9D
 P 6250 3650
-F 0 "D6" H 6250 3750 50  0000 C CNN
+F 0 "D5" H 6250 3750 50  0000 C CNN
 F 1 "LED" H 6250 3550 50  0000 C CNN
 F 2 "NixieClockMaster:LED-5MM-Centred" H 6250 3650 50  0001 C CNN
 F 3 "" H 6250 3650 50  0001 C CNN
@@ -1358,10 +1233,10 @@ F 3 "" H 6250 3650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PrismDDIN18-rescue:LED D5
+L PrismDDIN18-rescue:LED D6
 U 1 1 5ADCEDA3
 P 6500 3650
-F 0 "D5" H 6500 3750 50  0000 C CNN
+F 0 "D6" H 6500 3750 50  0000 C CNN
 F 1 "LED" H 6500 3550 50  0000 C CNN
 F 2 "NixieClockMaster:LED-5MM-Centred" H 6500 3650 50  0001 C CNN
 F 3 "" H 6500 3650 50  0001 C CNN
@@ -1373,19 +1248,19 @@ L PrismDDIN18-rescue:R R18
 U 1 1 5ADCF7B9
 P 6250 3250
 F 0 "R18" V 6330 3250 50  0000 C CNN
-F 1 "10k" V 6250 3250 50  0000 C CNN
+F 1 "120k" V 6250 3250 50  0000 C CNN
 F 2 "NixieClockMaster:R_Short_P7.62mm_Horizontal" V 6180 3250 50  0001 C CNN
 F 3 "" H 6250 3250 50  0000 C CNN
 	1    6250 3250
 	-1   0    0    1   
 $EndComp
 $Comp
-L PrismDDIN18-rescue:R R20
+L PrismDDIN18-rescue:R R21
 U 1 1 5ADCFE86
 P 9650 3250
-F 0 "R20" V 9730 3250 50  0000 C CNN
-F 1 "10k" V 9650 3250 50  0000 C CNN
-F 2 "NixieClockMaster:R-0207_2V" V 9580 3250 50  0001 C CNN
+F 0 "R21" V 9730 3250 50  0000 C CNN
+F 1 "120k" V 9650 3250 50  0000 C CNN
+F 2 "NixieClockMaster:R_Short_P7.62mm_Horizontal" V 9580 3250 50  0001 C CNN
 F 3 "" H 9650 3250 50  0000 C CNN
 	1    9650 3250
 	-1   0    0    1   
@@ -1395,15 +1270,14 @@ L PrismDDIN18-rescue:R R19
 U 1 1 5ADD0912
 P 6500 3250
 F 0 "R19" V 6580 3250 50  0000 C CNN
-F 1 "10k" V 6500 3250 50  0000 C CNN
+F 1 "120k" V 6500 3250 50  0000 C CNN
 F 2 "NixieClockMaster:R_Short_P7.62mm_Horizontal" V 6430 3250 50  0001 C CNN
 F 3 "" H 6500 3250 50  0000 C CNN
 	1    6500 3250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7950 9900 7950 9950
-Connection ~ 7950 9950
+	7950 10060 7950 10110
 Wire Wire Line
 	3900 5050 5150 5050
 Wire Wire Line
@@ -1443,8 +1317,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 10700 2400 10700
 Wire Wire Line
-	7800 9950 7950 9950
-Wire Wire Line
 	2600 5050 2600 5450
 Wire Wire Line
 	12100 2700 12100 2800
@@ -1453,10 +1325,10 @@ Wire Wire Line
 Wire Wire Line
 	8950 5050 8950 5450
 Wire Wire Line
-	7950 9950 8200 9950
+	7950 10110 8200 10110
 Wire Notes Line
 	11450 6600 16050 6600
-Connection ~ 14200 2100
+Connection ~ 14100 1400
 Text Label 6250 2900 0    50   ~ 0
 HV
 Wire Wire Line
@@ -1519,11 +1391,11 @@ Wire Notes Line
 	5700 4700 5700 500 
 Text Notes 6050 4450 0    60   ~ 0
 Display drivers
-Text Notes 13950 2600 0    60   ~ 0
+Text Notes 13850 1900 0    60   ~ 0
 I2C interface (3V3)
 Text Notes 13600 3650 0    60   ~ 0
 Front panel
-Text Label 14700 3800 0    65   ~ 0
+Text Label 14750 5200 0    65   ~ 0
 VCC
 Wire Wire Line
 	3800 10700 4450 10700
@@ -1534,7 +1406,7 @@ Connection ~ 4850 10700
 Wire Wire Line
 	4850 9700 5150 9700
 $Comp
-L Device:Crystal_Small Y1
+L PrismDDIN18-rescue:Crystal_Small-Device-PrismDDZ566M-rescue Y1
 U 1 1 5C33C105
 P 9800 5900
 F 0 "Y1" V 9800 6000 50  0000 L CNN
@@ -1563,13 +1435,13 @@ SCL
 Text Label 9600 5500 0    50   ~ 0
 SDA
 $Comp
-L Device:C C21
+L PrismDDIN18-rescue:C-Device-PrismDDZ566M-rescue C21
 U 1 1 5C4702AC
 P 11300 5550
 F 0 "C21" H 11415 5596 50  0000 L CNN
 F 1 "100nF" H 11415 5505 50  0000 L CNN
 F 2 "NixieClockMaster:C025-024X044" H 11338 5400 50  0001 C CNN
-F 3 "~" H 11300 5550 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/PZTAP_DATA_EN.pdf" H 11300 5550 50  0001 C CNN
 	1    11300 5550
 	1    0    0    -1  
 $EndComp
@@ -1580,7 +1452,7 @@ Wire Wire Line
 Text Label 10350 5000 0    50   ~ 0
 VCC
 $Comp
-L power:GND #PWR07
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR07
 U 1 1 5C5F7C27
 P 10650 6300
 F 0 "#PWR07" H 10650 6050 50  0001 C CNN
@@ -1593,13 +1465,13 @@ $EndComp
 Wire Wire Line
 	10650 6200 10650 6300
 $Comp
-L Device:Battery_Cell BT1
+L PrismDDIN18-rescue:Battery_Cell-Device-PrismDDZ566M-rescue BT1
 U 1 1 5C647529
 P 11800 5650
 F 0 "BT1" H 11918 5746 50  0000 L CNN
 F 1 "Battery_Cell" H 11918 5655 50  0000 L CNN
 F 2 "NixieClockMaster:CR1220-CoinCell" V 11800 5710 50  0001 C CNN
-F 3 "~" V 11800 5710 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/D600/1058_DS.pdf" V 11800 5710 50  0001 C CNN
 	1    11800 5650
 	1    0    0    -1  
 $EndComp
@@ -1610,7 +1482,7 @@ Wire Wire Line
 Wire Wire Line
 	11800 5100 10650 5100
 $Comp
-L power:PWR_FLAG #FLG0101
+L PrismDDIN18-rescue:PWR_FLAG-power-PrismDDZ566M-rescue #FLG0101
 U 1 1 5C6E83E9
 P 11800 5000
 F 0 "#FLG0101" H 11800 5075 50  0001 C CNN
@@ -1631,30 +1503,30 @@ U 1 1 5C458A48
 P 13900 8550
 F 0 "U1" H 13900 9187 60  0000 C CNN
 F 1 "WeMos_mini" H 13900 9081 60  0000 C CNN
-F 2 "NixieClockMaster:WeMos_D1_mini_board_flipped" H 14450 7850 60  0001 C CNN
+F 2 "NixieClockMaster:WeMos_D1_mini_board_simple" H 14450 7850 60  0001 C CNN
 F 3 "" H 14450 7850 60  0000 C CNN
 	1    13900 8550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L PrismDDIN18-rescue:C-Device-PrismDDZ566M-rescue C7
 U 1 1 5C458BB4
 P 12350 8050
-F 0 "C7" H 12465 8096 50  0000 L CNN
-F 1 "100nF" H 12400 7950 50  0000 L CNN
+F 0 "C7" H 12200 8150 50  0000 L CNN
+F 1 "100nF" V 12200 7850 50  0000 L CNN
 F 2 "NixieClockMaster:C025-024X044" H 12388 7900 50  0001 C CNN
-F 3 "~" H 12350 8050 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/PZTAP_DATA_EN.pdf" H 12350 8050 50  0001 C CNN
 	1    12350 8050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C8
+L PrismDDIN18-rescue:CP-Device-PrismDDZ566M-rescue C8
 U 1 1 5C458D04
 P 12750 8050
-F 0 "C8" H 12868 8096 50  0000 L CNN
-F 1 "220uF" H 12800 7950 50  0000 L CNN
+F 0 "C8" H 12800 8150 50  0000 L CNN
+F 1 "220uF 10V" V 12950 7850 50  0000 L CNN
 F 2 "NixieClockMaster:C_Radial_D6.3_L11.2_P2.5" H 12788 7900 50  0001 C CNN
-F 3 "~" H 12750 8050 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/EEUFM_SERIES_ENG_TDS.pdf" H 12750 8050 50  0001 C CNN
 	1    12750 8050
 	1    0    0    -1  
 $EndComp
@@ -1706,7 +1578,7 @@ Text Label 12100 2200 0    50   ~ 0
 DATA1
 NoConn ~ 14400 8300
 $Comp
-L power:GND #PWR0101
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0101
 U 1 1 5C9FB548
 P 12750 8450
 F 0 "#PWR0101" H 12750 8200 50  0001 C CNN
@@ -1733,312 +1605,72 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5CB78960
-P 14550 5300
-F 0 "J1" H 14470 4975 50  0000 C CNN
-F 1 "Conn_01x03" H 14470 5066 50  0000 C CNN
-F 2 "NixieClockMaster:Header_MA03-1_Small" H 14550 5300 50  0001 C CNN
-F 3 "~" H 14550 5300 50  0001 C CNN
-	1    14550 5300
+P 13200 5700
+F 0 "J1" H 13120 5375 50  0000 C CNN
+F 1 "LED_TEST" H 13120 5466 50  0000 C CNN
+F 2 "NixieClockMaster:Header_MA03-1_Small" H 13200 5700 50  0001 C CNN
+F 3 "~" H 13200 5700 50  0001 C CNN
+	1    13200 5700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	14750 5400 15150 5400
+	13400 5800 13800 5800
 Wire Wire Line
-	14750 5300 15150 5300
+	13400 5700 13800 5700
 Wire Wire Line
-	14750 5200 15150 5200
-Text Label 15150 5200 2    50   ~ 0
+	13400 5600 13800 5600
+Text Label 13800 5600 2    50   ~ 0
 VCC
-Text Label 15150 5300 2    50   ~ 0
+Text Label 13800 5700 2    50   ~ 0
 GND
-Text Label 15150 5400 2    50   ~ 0
+Text Label 13800 5800 2    50   ~ 0
 LED_DATA
-Text Notes 14350 4850 0    60   ~ 0
+Text Notes 13000 5250 0    60   ~ 0
 NeoPixel Test Point
-$Comp
-L Transistor_FET:2N7000 Q2
-U 1 1 5CCF4DB0
-P 3100 1350
-F 0 "Q2" V 3050 1500 50  0000 C CNN
-F 1 "2N7000" V 3350 1350 50  0000 C CNN
-F 2 "NixieClockMaster:TO-92_inline_2N7000" H 3300 1275 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3100 1350 50  0001 L CNN
-	1    3100 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5CD283FB
-P 2750 1200
-F 0 "R10" H 2820 1246 50  0000 L CNN
-F 1 "10k" H 2820 1155 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 2680 1200 50  0001 C CNN
-F 3 "~" H 2750 1200 50  0001 C CNN
-	1    2750 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5CD28503
-P 3450 1200
-F 0 "R11" H 3520 1246 50  0000 L CNN
-F 1 "10k" H 3520 1155 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 3380 1200 50  0001 C CNN
-F 3 "~" H 3450 1200 50  0001 C CNN
-	1    3450 1200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2750 850  2750 1000
-Wire Wire Line
-	2750 1000 3100 1000
-Wire Wire Line
-	3100 1000 3100 1150
-Connection ~ 2750 1000
-Wire Wire Line
-	2750 1000 2750 1050
-Wire Wire Line
-	2900 1450 2750 1450
-Wire Wire Line
-	2750 1450 2750 1350
-Connection ~ 2750 1450
-Wire Wire Line
-	3300 1450 3450 1450
-Wire Wire Line
-	3450 1450 3450 1350
-Wire Wire Line
-	3450 1450 3700 1450
-Connection ~ 3450 1450
-Wire Wire Line
-	3450 1050 3450 850 
-Wire Wire Line
-	3450 850  3600 850 
-Text Label 3600 850  0    50   ~ 0
-VSup
-Text Label 2250 850  0    50   ~ 0
-3V3
-Text Label 2250 1450 0    50   ~ 0
+	3040 2310 3290 2310
+Text Label 1640 2310 0    50   ~ 0
 DATA1_3V3
 Wire Wire Line
-	2250 1450 2750 1450
-Wire Wire Line
-	2250 850  2750 850 
-Text Label 3700 1450 2    50   ~ 0
+	1640 2310 2140 2310
+Text Label 3290 2310 2    50   ~ 0
 DATA1
-$Comp
-L Transistor_FET:2N7000 Q3
-U 1 1 5CFB6A40
-P 3150 2250
-F 0 "Q3" V 3100 2400 50  0000 C CNN
-F 1 "2N7000" V 3400 2250 50  0000 C CNN
-F 2 "NixieClockMaster:TO-92_inline_2N7000" H 3350 2175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3150 2250 50  0001 L CNN
-	1    3150 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5CFB6A46
-P 2800 2100
-F 0 "R12" H 2870 2146 50  0000 L CNN
-F 1 "10k" H 2870 2055 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 2730 2100 50  0001 C CNN
-F 3 "~" H 2800 2100 50  0001 C CNN
-	1    2800 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5CFB6A4C
-P 3500 2100
-F 0 "R13" H 3570 2146 50  0000 L CNN
-F 1 "10k" H 3570 2055 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 3430 2100 50  0001 C CNN
-F 3 "~" H 3500 2100 50  0001 C CNN
-	1    3500 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2800 1750 2800 1900
+	3040 2510 3290 2510
 Wire Wire Line
-	2800 1900 3150 1900
-Wire Wire Line
-	3150 1900 3150 2050
-Connection ~ 2800 1900
-Wire Wire Line
-	2800 1900 2800 1950
-Wire Wire Line
-	2950 2350 2800 2350
-Wire Wire Line
-	2800 2350 2800 2250
-Connection ~ 2800 2350
-Wire Wire Line
-	3350 2350 3500 2350
-Wire Wire Line
-	3500 2350 3500 2250
-Wire Wire Line
-	3500 2350 3750 2350
-Connection ~ 3500 2350
-Wire Wire Line
-	3500 1950 3500 1750
-Wire Wire Line
-	3500 1750 3650 1750
-Text Label 3650 1750 0    50   ~ 0
-VSup
-Text Label 2300 1750 0    50   ~ 0
+	3040 2210 3190 2210
+Text Label 3190 2210 0    50   ~ 0
+VIN
+Text Label 1640 2210 0    50   ~ 0
 3V3
-Text Label 2300 2350 0    50   ~ 0
+Text Label 1640 2510 0    50   ~ 0
 BLANK_3V3
 Wire Wire Line
-	2300 2350 2800 2350
+	1640 2510 2140 2510
 Wire Wire Line
-	2300 1750 2800 1750
-Text Label 3750 2350 2    50   ~ 0
+	1640 2210 2090 2210
+Text Label 3290 2510 2    50   ~ 0
 BLANK
-$Comp
-L Transistor_FET:2N7000 Q4
-U 1 1 5CFF2A8C
-P 3150 3200
-F 0 "Q4" V 3100 3350 50  0000 C CNN
-F 1 "2N7000" V 3400 3200 50  0000 C CNN
-F 2 "NixieClockMaster:TO-92_inline_2N7000" H 3350 3125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3150 3200 50  0001 L CNN
-	1    3150 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5CFF2A92
-P 2800 3050
-F 0 "R7" H 2870 3096 50  0000 L CNN
-F 1 "10k" H 2870 3005 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 2730 3050 50  0001 C CNN
-F 3 "~" H 2800 3050 50  0001 C CNN
-	1    2800 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R23
-U 1 1 5CFF2A98
-P 3500 3050
-F 0 "R23" H 3570 3096 50  0000 L CNN
-F 1 "10k" H 3570 3005 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 3430 3050 50  0001 C CNN
-F 3 "~" H 3500 3050 50  0001 C CNN
-	1    3500 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2800 2700 2800 2850
-Wire Wire Line
-	2800 2850 3150 2850
-Wire Wire Line
-	3150 2850 3150 3000
-Connection ~ 2800 2850
-Wire Wire Line
-	2800 2850 2800 2900
-Wire Wire Line
-	2950 3300 2800 3300
-Wire Wire Line
-	2800 3300 2800 3200
-Connection ~ 2800 3300
-Wire Wire Line
-	3350 3300 3500 3300
-Wire Wire Line
-	3500 3300 3500 3200
-Wire Wire Line
-	3500 3300 3750 3300
-Connection ~ 3500 3300
-Wire Wire Line
-	3500 2900 3500 2700
-Wire Wire Line
-	3500 2700 3650 2700
-Text Label 3650 2700 0    50   ~ 0
-VSup
-Text Label 2300 2700 0    50   ~ 0
-3V3
-Text Label 2300 3300 0    50   ~ 0
+	3040 2710 3290 2710
+Text Label 1640 2710 0    50   ~ 0
 CLK_3V3
 Wire Wire Line
-	2300 3300 2800 3300
-Wire Wire Line
-	2300 2700 2800 2700
-Text Label 3750 3300 2    50   ~ 0
+	1640 2710 2140 2710
+Text Label 3290 2710 2    50   ~ 0
 CLK
-$Comp
-L Transistor_FET:2N7000 Q5
-U 1 1 5D072361
-P 3200 4150
-F 0 "Q5" V 3150 4300 50  0000 C CNN
-F 1 "2N7000" V 3450 4150 50  0000 C CNN
-F 2 "NixieClockMaster:TO-92_inline_2N7000" H 3400 4075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3200 4150 50  0001 L CNN
-	1    3200 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R22
-U 1 1 5D072367
-P 2850 4000
-F 0 "R22" H 2920 4046 50  0000 L CNN
-F 1 "10k" H 2920 3955 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 2780 4000 50  0001 C CNN
-F 3 "~" H 2850 4000 50  0001 C CNN
-	1    2850 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R24
-U 1 1 5D07236D
-P 3550 4000
-F 0 "R24" H 3620 4046 50  0000 L CNN
-F 1 "10k" H 3620 3955 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 3480 4000 50  0001 C CNN
-F 3 "~" H 3550 4000 50  0001 C CNN
-	1    3550 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2850 3650 2850 3800
-Wire Wire Line
-	2850 3800 3200 3800
-Wire Wire Line
-	3200 3800 3200 3950
-Connection ~ 2850 3800
-Wire Wire Line
-	2850 3800 2850 3850
-Wire Wire Line
-	3000 4250 2850 4250
-Wire Wire Line
-	2850 4250 2850 4150
-Connection ~ 2850 4250
-Wire Wire Line
-	3400 4250 3550 4250
-Wire Wire Line
-	3550 4250 3550 4150
-Wire Wire Line
-	3550 4250 3800 4250
-Connection ~ 3550 4250
-Wire Wire Line
-	3550 3850 3550 3650
-Wire Wire Line
-	3550 3650 3700 3650
-Text Label 3700 3650 0    50   ~ 0
-VSup
-Text Label 2350 3650 0    50   ~ 0
-3V3
-Text Label 2350 4250 0    50   ~ 0
+	3040 2910 3290 2910
+Text Label 1640 2910 0    50   ~ 0
 LATCH_3V3
 Wire Wire Line
-	2350 4250 2850 4250
-Wire Wire Line
-	2350 3650 2850 3650
-Text Label 3800 4250 2    50   ~ 0
+	1640 2910 2140 2910
+Text Label 3290 2910 2    50   ~ 0
 LATCH
-Text Notes 900  950  0    60   ~ 0
-Level shifters
+Text Notes 2250 1680 0    60   ~ 0
+Level shifter
 $Comp
-L power:PWR_FLAG #FLG0102
+L PrismDDIN18-rescue:PWR_FLAG-power-PrismDDZ566M-rescue #FLG0102
 U 1 1 5D10371C
 P 5150 9650
 F 0 "#FLG0102" H 5150 9745 50  0001 C CNN
@@ -2114,127 +1746,8 @@ Wire Wire Line
 Wire Wire Line
 	9800 5000 9800 5050
 Connection ~ 10000 5000
-NoConn ~ 2450 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED6
-U 1 1 5CFB5CAB
-P 9350 8000
-F 0 "LED6" H 9350 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 9350 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 9150 7600 50  0001 L TNN
-F 3 "" H 9550 7725 50  0001 L TNN
-	1    9350 8000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9850 7600 9850 7850
-Wire Wire Line
-	9750 8150 10250 8150
-Wire Wire Line
-	9750 7850 9850 7850
-Wire Wire Line
-	8550 7600 8550 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED5
-U 1 1 5D862977
-P 8050 8000
-F 0 "LED5" H 8050 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 8050 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7850 7600 50  0001 L TNN
-F 3 "" H 8250 7725 50  0001 L TNN
-	1    8050 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 7850 8550 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED4
-U 1 1 5DDEF895
-P 6750 8000
-F 0 "LED4" H 6750 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 6750 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6550 7600 50  0001 L TNN
-F 3 "" H 6950 7725 50  0001 L TNN
-	1    6750 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 8150 7550 8150
-Wire Wire Line
-	7550 8150 7550 7850
-Wire Wire Line
-	7150 7850 7250 7850
-Wire Wire Line
-	7250 7600 7250 7850
-Wire Wire Line
-	5950 7600 5950 7850
-Wire Wire Line
-	6250 8150 6250 7850
-Wire Wire Line
-	6250 7850 6350 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED3
-U 1 1 5E2FB4E8
-P 5450 8000
-F 0 "LED3" H 5450 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 5450 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 5250 7600 50  0001 L TNN
-F 3 "" H 5650 7725 50  0001 L TNN
-	1    5450 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 8150 5850 8150
-Wire Wire Line
-	5850 7850 5950 7850
-Wire Wire Line
-	4650 7600 4650 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED2
-U 1 1 5E6A2269
-P 4150 8000
-F 0 "LED2" H 4150 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 4150 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 3950 7600 50  0001 L TNN
-F 3 "" H 4350 7725 50  0001 L TNN
-	1    4150 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 7850 4950 7850
-Wire Wire Line
-	4950 7850 4950 8150
-Wire Wire Line
-	4950 8150 4550 8150
-Wire Wire Line
-	4550 7850 4650 7850
-Wire Wire Line
-	8950 7850 8850 7850
-Wire Wire Line
-	8850 7850 8850 8150
-Wire Wire Line
-	8450 8150 8850 8150
-Wire Wire Line
-	3350 7600 3350 7850
-$Comp
-L PrismDDIN18-rescue:SK6812MINI-LED1 LED1
-U 1 1 5EA5C4F8
-P 2850 8000
-F 0 "LED1" H 2850 8467 50  0000 C CNN
-F 1 "SK6812MINI" H 2850 8376 50  0000 C CNN
-F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 2650 7600 50  0001 L TNN
-F 3 "" H 3050 7725 50  0001 L TNN
-	1    2850 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 7850 3650 7850
-Wire Wire Line
-	3650 7850 3650 8150
-Wire Wire Line
-	3250 7850 3350 7850
-Wire Wire Line
-	3250 8150 3650 8150
+	3500 7850 3600 7850
 Wire Wire Line
 	9800 5500 10150 5500
 Wire Wire Line
@@ -2249,12 +1762,12 @@ Connection ~ 11300 6200
 Wire Wire Line
 	11800 5750 11800 6200
 $Comp
-L PrismDDIN18-rescue:DS1307+DIL8-Timer_RTC U5
+L PrismDDIN18-rescue:DS1307+DIL8-Timer_RTC-PrismDDZ566M-rescue U5
 U 1 1 5DA83D67
 P 10650 5700
 F 0 "U5" H 10250 6150 50  0000 L CNN
 F 1 "DS1307+DIL8" H 10700 6150 50  0000 L CNN
-F 2 "NixieClockMaster:DS1307_DIL8" H 10650 5200 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 10650 5200 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 10650 5500 50  0001 C CNN
 	1    10650 5700
 	1    0    0    -1  
@@ -2263,99 +1776,681 @@ Connection ~ 10650 6200
 Wire Wire Line
 	10550 5000 11300 5000
 Connection ~ 10550 5000
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED1
+U 1 1 5D88C4AB
+P 3100 8000
+F 0 "LED1" H 3100 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 3100 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 2800 7550 50  0001 L TNN
+F 3 "" H 3200 7625 50  0001 L TNN
+	1    3100 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 8150 3500 8400
+Wire Wire Line
+	2600 7600 2500 7600
+Wire Wire Line
+	2600 8100 2600 8400
+Connection ~ 3500 8400
+Wire Wire Line
+	3500 8400 3500 8500
+Wire Wire Line
+	2600 7600 2600 7850
+Wire Wire Line
+	2600 8400 3500 8400
+Wire Wire Line
+	2600 7850 2700 7850
+Connection ~ 2600 7850
+Wire Wire Line
+	2600 7850 2600 7900
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0102
+U 1 1 5DBBC80D
+P 4800 8500
+F 0 "#PWR0102" H 4800 8250 50  0001 C CNN
+F 1 "GND" H 4800 8350 50  0000 C CNN
+F 2 "" H 4800 8500 50  0000 C CNN
+F 3 "" H 4800 8500 50  0000 C CNN
+	1    4800 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:C_Small C2
+U 1 1 5DBBC813
+P 3900 8000
+F 0 "C2" H 3700 8050 50  0000 L CNN
+F 1 "100nF" H 3650 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3900 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 3900 8000 50  0001 C CNN
+	1    3900 8000
+	1    0    0    -1  
+$EndComp
+Text Label 3800 7600 2    60   ~ 0
+VCC
+Wire Wire Line
+	4900 7850 4900 8150
+Wire Wire Line
+	4800 7850 4900 7850
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED2
+U 1 1 5DBBC81D
+P 4400 8000
+F 0 "LED2" H 4400 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 4400 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 4100 7550 50  0001 L TNN
+F 3 "" H 4500 7625 50  0001 L TNN
+	1    4400 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 8150 4800 8400
+Wire Wire Line
+	3900 7600 3800 7600
+Wire Wire Line
+	3900 8100 3900 8400
+Connection ~ 4800 8400
+Wire Wire Line
+	4800 8400 4800 8500
+Wire Wire Line
+	3900 7600 3900 7850
+Wire Wire Line
+	3900 8400 4800 8400
+Wire Wire Line
+	3900 7850 4000 7850
+Connection ~ 3900 7850
+Wire Wire Line
+	3900 7850 3900 7900
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0103
+U 1 1 5DC86D4A
+P 10000 8500
+F 0 "#PWR0103" H 10000 8250 50  0001 C CNN
+F 1 "GND" H 10000 8350 50  0000 C CNN
+F 2 "" H 10000 8500 50  0000 C CNN
+F 3 "" H 10000 8500 50  0000 C CNN
+	1    10000 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:C_Small C6
+U 1 1 5DC86D50
+P 9100 8000
+F 0 "C6" H 8900 8050 50  0000 L CNN
+F 1 "100nF" H 8850 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9100 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 9100 8000 50  0001 C CNN
+	1    9100 8000
+	1    0    0    -1  
+$EndComp
+Text Label 9000 7600 2    60   ~ 0
+VCC
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED6
+U 1 1 5DC86D5A
+P 9600 8000
+F 0 "LED6" H 9600 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 9600 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 9300 7550 50  0001 L TNN
+F 3 "" H 9700 7625 50  0001 L TNN
+	1    9600 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 8150 10000 8400
+Wire Wire Line
+	9100 7600 9000 7600
+Wire Wire Line
+	9100 8100 9100 8400
+Connection ~ 10000 8400
+Wire Wire Line
+	10000 8400 10000 8500
+Wire Wire Line
+	9100 7600 9100 7850
+Wire Wire Line
+	9100 8400 10000 8400
+Wire Wire Line
+	9100 7850 9200 7850
+Connection ~ 9100 7850
+Wire Wire Line
+	9100 7850 9100 7900
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0104
+U 1 1 5DCC83A7
+P 8700 8500
+F 0 "#PWR0104" H 8700 8250 50  0001 C CNN
+F 1 "GND" H 8700 8350 50  0000 C CNN
+F 2 "" H 8700 8500 50  0000 C CNN
+F 3 "" H 8700 8500 50  0000 C CNN
+	1    8700 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:C_Small C5
+U 1 1 5DCC83AD
+P 7800 8000
+F 0 "C5" H 7600 8050 50  0000 L CNN
+F 1 "100nF" H 7550 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7800 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 7800 8000 50  0001 C CNN
+	1    7800 8000
+	1    0    0    -1  
+$EndComp
+Text Label 7700 7600 2    60   ~ 0
+VCC
+Wire Wire Line
+	8800 7850 8800 8150
+Wire Wire Line
+	8700 7850 8800 7850
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED5
+U 1 1 5DCC83B7
+P 8300 8000
+F 0 "LED5" H 8300 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 8300 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 8000 7550 50  0001 L TNN
+F 3 "" H 8400 7625 50  0001 L TNN
+	1    8300 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 8150 8700 8400
+Wire Wire Line
+	7800 7600 7700 7600
+Wire Wire Line
+	7800 8100 7800 8400
+Connection ~ 8700 8400
+Wire Wire Line
+	8700 8400 8700 8500
+Wire Wire Line
+	7800 7600 7800 7850
+Wire Wire Line
+	7800 8400 8700 8400
+Wire Wire Line
+	7800 7850 7900 7850
+Connection ~ 7800 7850
+Wire Wire Line
+	7800 7850 7800 7900
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0105
+U 1 1 5DD0B94B
+P 7400 8500
+F 0 "#PWR0105" H 7400 8250 50  0001 C CNN
+F 1 "GND" H 7400 8350 50  0000 C CNN
+F 2 "" H 7400 8500 50  0000 C CNN
+F 3 "" H 7400 8500 50  0000 C CNN
+	1    7400 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:C_Small C4
+U 1 1 5DD0B951
+P 6500 8000
+F 0 "C4" H 6300 8050 50  0000 L CNN
+F 1 "100nF" H 6250 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6500 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 6500 8000 50  0001 C CNN
+	1    6500 8000
+	1    0    0    -1  
+$EndComp
+Text Label 6400 7600 2    60   ~ 0
+VCC
+Wire Wire Line
+	7500 7850 7500 8150
+Wire Wire Line
+	7400 7850 7500 7850
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED4
+U 1 1 5DD0B95B
+P 7000 8000
+F 0 "LED4" H 7000 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 7000 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 6700 7550 50  0001 L TNN
+F 3 "" H 7100 7625 50  0001 L TNN
+	1    7000 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 8150 7400 8400
+Wire Wire Line
+	6500 7600 6400 7600
+Wire Wire Line
+	6500 8100 6500 8400
+Connection ~ 7400 8400
+Wire Wire Line
+	7400 8400 7400 8500
+Wire Wire Line
+	6500 7600 6500 7850
+Wire Wire Line
+	6500 8400 7400 8400
+Wire Wire Line
+	6500 7850 6600 7850
+Connection ~ 6500 7850
+Wire Wire Line
+	6500 7850 6500 7900
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR0106
+U 1 1 5DD51D25
+P 6100 8500
+F 0 "#PWR0106" H 6100 8250 50  0001 C CNN
+F 1 "GND" H 6100 8350 50  0000 C CNN
+F 2 "" H 6100 8500 50  0000 C CNN
+F 3 "" H 6100 8500 50  0000 C CNN
+	1    6100 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:C_Small C3
+U 1 1 5DD51D2B
+P 5200 8000
+F 0 "C3" H 5000 8050 50  0000 L CNN
+F 1 "100nF" H 4950 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5200 8000 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B300/KEM_C0XXX_X7R_DB-EN.pdf" H 5200 8000 50  0001 C CNN
+	1    5200 8000
+	1    0    0    -1  
+$EndComp
+Text Label 5100 7600 2    60   ~ 0
+VCC
+Wire Wire Line
+	6200 7850 6200 8150
+Wire Wire Line
+	6100 7850 6200 7850
+$Comp
+L PrismDDIN18-rescue:WS2812B_3535-LED1-PrismDDZ566M-rescue LED3
+U 1 1 5DD51D35
+P 5700 8000
+F 0 "LED3" H 5700 8467 50  0000 C CNN
+F 1 "WS2812B_3535" H 5700 8376 50  0000 C CNN
+F 2 "NixieClockMaster:WS2812B-SmallPads" H 5400 7550 50  0001 L TNN
+F 3 "" H 5800 7625 50  0001 L TNN
+	1    5700 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 8150 6100 8400
+Wire Wire Line
+	5200 7600 5100 7600
+Wire Wire Line
+	5200 8100 5200 8400
+Connection ~ 6100 8400
+Wire Wire Line
+	6100 8400 6100 8500
+Wire Wire Line
+	5200 7600 5200 7850
+Wire Wire Line
+	5200 8400 6100 8400
+Wire Wire Line
+	5200 7850 5300 7850
+Connection ~ 5200 7850
+Wire Wire Line
+	5200 7850 5200 7900
+Wire Wire Line
+	10000 7850 10250 7850
+Wire Wire Line
+	4000 8150 3600 8150
+Wire Wire Line
+	3600 7850 3600 8150
+Wire Wire Line
+	5300 8150 4900 8150
+Wire Wire Line
+	6600 8150 6200 8150
+Wire Wire Line
+	9200 8150 8800 8150
+Wire Wire Line
+	7500 8150 7900 8150
+$Comp
+L PrismDDIN18-rescue:Z566M H10
+U 1 1 5DD68FE7
+P 2200 6050
+F 0 "H10" H 2150 6898 50  0000 C CNN
+F 1 "Z566M" H 2200 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 2200 6050 50  0001 C CNN
+F 3 "" H 2200 6050 50  0001 C CNN
+	1    2200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:Z566M H1
+U 1 1 5DDFF753
+P 3550 6050
+F 0 "H1" H 3500 6898 50  0000 C CNN
+F 1 "Z566M" H 3550 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 3550 6050 50  0001 C CNN
+F 3 "" H 3550 6050 50  0001 C CNN
+	1    3550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:Z566M M10
+U 1 1 5DE950BC
+P 4800 6050
+F 0 "M10" H 4750 6898 50  0000 C CNN
+F 1 "Z566M" H 4800 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 4800 6050 50  0001 C CNN
+F 3 "" H 4800 6050 50  0001 C CNN
+	1    4800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:Z566M M1
+U 1 1 5DE96633
+P 6050 6050
+F 0 "M1" H 6000 6898 50  0000 C CNN
+F 1 "Z566M" H 6050 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 6050 6050 50  0001 C CNN
+F 3 "" H 6050 6050 50  0001 C CNN
+	1    6050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:Z566M S10
+U 1 1 5DE97ACC
+P 7300 6050
+F 0 "S10" H 7250 6898 50  0000 C CNN
+F 1 "Z566M" H 7300 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 7300 6050 50  0001 C CNN
+F 3 "" H 7300 6050 50  0001 C CNN
+	1    7300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:Z566M S1
+U 1 1 5DE983D8
+P 8600 6050
+F 0 "S1" H 8550 6898 50  0000 C CNN
+F 1 "Z566M" H 8600 6050 50  0001 C CNN
+F 2 "NixieClockMaster:IN-18-standoff-pins" H 8600 6050 50  0001 C CNN
+F 3 "" H 8600 6050 50  0001 C CNN
+	1    8600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5950 2500 5950
+Wire Wire Line
+	14850 4050 14850 4600
+Wire Wire Line
+	14850 4600 14650 4600
+Wire Wire Line
+	14000 4600 14000 4250
+Wire Wire Line
+	13900 4050 14850 4050
+Connection ~ 14000 4250
+Wire Wire Line
+	14000 4250 14100 4250
+$Comp
+L PrismDDIN18-rescue:SW_Push-Switch-PrismDDZ566M-rescue SW1
+U 1 1 5F082628
+P 14450 4600
+F 0 "SW1" H 14450 4885 50  0000 C CNN
+F 1 "SW_Push" H 14450 4794 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 14450 4800 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/60/RS-282G05A-SM_RT-1159762.pdf" H 14450 4800 50  0001 C CNN
+	1    14450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 4600 14000 4600
+Wire Wire Line
+	2140 2410 2090 2410
+Wire Wire Line
+	2090 2410 2090 2610
+Wire Wire Line
+	2090 2610 2140 2610
+Wire Wire Line
+	2090 2610 2090 2810
+Wire Wire Line
+	2090 2810 2140 2810
+Connection ~ 2090 2610
+Wire Wire Line
+	2090 2810 2090 3010
+Wire Wire Line
+	2090 3010 2140 3010
+Connection ~ 2090 2810
+Wire Wire Line
+	2090 2410 2090 2210
+Connection ~ 2090 2410
+Connection ~ 2090 2210
+Wire Wire Line
+	2090 2210 2140 2210
+Wire Wire Line
+	3040 3010 3190 3010
+Wire Wire Line
+	3190 3010 3190 3160
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND01
+U 1 1 60ABC1B1
+P 3190 3160
+F 0 "#GND01" H 3090 3060 70  0001 L BNN
+F 1 "GND" H 3090 2960 70  0000 L BNN
+F 2 "" H 3190 3160 60  0001 C CNN
+F 3 "" H 3190 3160 60  0001 C CNN
+	1    3190 3160
+	1    0    0    -1  
+$EndComp
 NoConn ~ 11150 5700
-Wire Wire Line
-	8950 8150 8950 8500
-Wire Wire Line
-	7650 8150 7650 8500
-Wire Wire Line
-	6350 8150 6350 8500
-Wire Wire Line
-	5050 8150 5050 8500
-Wire Wire Line
-	3750 8150 3750 8500
-Wire Wire Line
-	2450 8150 2450 8500
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 60A7D05C
+P 4540 2520
+F 0 "MH3" H 4640 2566 50  0000 L CNN
+F 1 "MountingHole" H 4640 2475 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 2520 50  0001 C CNN
+F 3 "~" H 4540 2520 50  0001 C CNN
+	1    4540 2520
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 60A7DDF2
+P 4540 2710
+F 0 "MH4" H 4640 2756 50  0000 L CNN
+F 1 "MountingHole" H 4640 2665 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 2710 50  0001 C CNN
+F 3 "~" H 4540 2710 50  0001 C CNN
+	1    4540 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH5
+U 1 1 60A7E9B5
+P 4540 2900
+F 0 "MH5" H 4640 2946 50  0000 L CNN
+F 1 "MountingHole" H 4640 2855 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 2900 50  0001 C CNN
+F 3 "~" H 4540 2900 50  0001 C CNN
+	1    4540 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH6
+U 1 1 60A7EB8B
+P 4540 3090
+F 0 "MH6" H 4640 3136 50  0000 L CNN
+F 1 "MountingHole" H 4640 3045 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 3090 50  0001 C CNN
+F 3 "~" H 4540 3090 50  0001 C CNN
+	1    4540 3090
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 60AC2964
+P 4540 2150
+F 0 "MH1" H 4640 2196 50  0000 L CNN
+F 1 "MountingHole" H 4640 2105 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 2150 50  0001 C CNN
+F 3 "~" H 4540 2150 50  0001 C CNN
+	1    4540 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 60AC2B52
+P 4540 2340
+F 0 "MH2" H 4640 2386 50  0000 L CNN
+F 1 "MountingHole" H 4640 2295 50  0000 L CNN
+F 2 "NixieClockMaster:MountingHole_3.2mm_M3" H 4540 2340 50  0001 C CNN
+F 3 "~" H 4540 2340 50  0001 C CNN
+	1    4540 2340
+	1    0    0    -1  
+$EndComp
 $Comp
 L NixieClockMaster:HVSMPS-34063 U2
-U 1 1 5F6ABFEC
-P 8900 10100
-F 0 "U2" H 8900 10475 50  0000 C CNN
-F 1 "HVSMPS-34063" H 8900 10384 50  0000 C CNN
-F 2 "NixieClockMaster:HVSMPS-34063" H 8900 10100 50  0001 C CNN
-F 3 "" H 8900 10100 50  0001 C CNN
-	1    8900 10100
+U 1 1 60BA087D
+P 8900 10260
+F 0 "U2" H 8900 10635 50  0000 C CNN
+F 1 "HVSMPS-34063" H 8900 10544 50  0000 C CNN
+F 2 "NixieClockMaster:HVSMPS-34063" H 8900 10260 50  0001 C CNN
+F 3 "" H 8900 10260 50  0001 C CNN
+	1    8900 10260
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 9950 9800 9950
+	9600 10210 9690 10210
 Wire Wire Line
-	9600 10050 9850 10050
+	9690 10210 9690 10340
 Wire Wire Line
-	9850 10050 9850 10700
+	10550 9850 10110 9850
 Wire Wire Line
-	8150 10700 8150 10050
+	10110 9850 10110 9910
 Wire Wire Line
-	8150 10050 8200 10050
+	10110 10210 9690 10210
+Connection ~ 9690 10210
+Wire Wire Line
+	9600 10110 9800 10110
+Wire Wire Line
+	9800 10110 9800 9850
+Wire Wire Line
+	9800 9850 10110 9850
+Connection ~ 10110 9850
 $Comp
-L power:GND #PWR0102
-U 1 1 5F748C65
-P 9050 10800
-F 0 "#PWR0102" H 9050 10550 50  0001 C CNN
-F 1 "GND" H 9055 10627 50  0000 C CNN
-F 2 "" H 9050 10800 50  0001 C CNN
-F 3 "" H 9050 10800 50  0001 C CNN
-	1    9050 10800
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND0101
+U 1 1 60CB5C41
+P 8090 10400
+F 0 "#GND0101" H 7990 10300 70  0001 L BNN
+F 1 "GND" H 7990 10200 70  0000 L BNN
+F 2 "" H 8090 10400 60  0001 C CNN
+F 3 "" H 8090 10400 60  0001 C CNN
+	1    8090 10400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 10800 9050 10700
+	8200 10210 8090 10210
 Wire Wire Line
-	8150 10700 9050 10700
-Connection ~ 9050 10700
+	8090 10210 8090 10400
 Wire Wire Line
-	9050 10700 9850 10700
+	7950 10110 7710 10110
+Connection ~ 7950 10110
 Wire Wire Line
-	13350 5100 13600 5100
-Wire Wire Line
-	13600 5100 13600 5350
+	14750 5800 14750 5870
+Connection ~ 14750 5800
 $Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 5F61D544
-P 13600 5550
-F 0 "JP1" V 13554 5618 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 13645 5618 50  0000 L CNN
-F 2 "NixieClockMaster:SOLDER-JUMPER_2-WAY" H 13600 5550 50  0001 C CNN
-F 3 "~" H 13600 5550 50  0001 C CNN
-	1    13600 5550
-	0    1    1    0   
+L Device:R_PHOTO R7
+U 1 1 60BEE6D3
+P 14750 6020
+F 0 "R7" H 14820 6066 50  0000 L CNN
+F 1 "R_PHOTO" H 14820 5975 50  0000 L CNN
+F 2 "NixieClockMaster:C_Naked" V 14800 5770 50  0001 L CNN
+F 3 "~" H 14750 5970 50  0001 C CNN
+	1    14750 6020
+	1    0    0    -1  
+$EndComp
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #PWR02
+U 1 1 60BF269F
+P 14750 6270
+F 0 "#PWR02" H 14750 6020 50  0001 C CNN
+F 1 "GND" H 14750 6120 50  0000 C CNN
+F 2 "" H 14750 6270 50  0000 C CNN
+F 3 "" H 14750 6270 50  0000 C CNN
+	1    14750 6270
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13600 5750 13600 6050
+	14750 6170 14750 6270
+$Comp
+L PrismDDIN18-rescue:TEST_1P W5
+U 1 1 60C2BD03
+P 2250 9850
+F 0 "W5" H 2250 10120 50  0000 C CNN
+F 1 "VIN" H 2250 10050 50  0000 C CNN
+F 2 "NixieClockMaster:TESTPAD_P1-13" H 2450 9850 50  0001 C CNN
+F 3 "" H 2450 9850 50  0000 C CNN
+	1    2250 9850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 9850
 Wire Wire Line
-	13600 6050 13350 6050
-Text Label 13350 6050 0    50   ~ 0
-VCC
-Text Label 13350 5100 0    50   ~ 0
+	2250 9850 2400 9850
+$Comp
+L Device:C C9
+U 1 1 60C171E7
+P 1040 2450
+F 0 "C9" H 1155 2496 50  0000 L CNN
+F 1 "100nF" H 1155 2405 50  0000 L CNN
+F 2 "NixieClockMaster:C025-024X044" H 1078 2300 50  0001 C CNN
+F 3 "~" H 1040 2450 50  0001 C CNN
+	1    1040 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1040 2600 1040 2750
+$Comp
+L PrismDDIN18-rescue:GND-power-PrismDDZ566M-rescue #GND02
+U 1 1 60C194CC
+P 1040 2750
+F 0 "#GND02" H 940 2650 70  0001 L BNN
+F 1 "GND" H 940 2550 70  0000 L BNN
+F 2 "" H 1040 2750 60  0001 C CNN
+F 3 "" H 1040 2750 60  0001 C CNN
+	1    1040 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1040 2190 1190 2190
+Text Label 1190 2190 0    50   ~ 0
 VIN
-Text Label 13050 5550 0    50   ~ 0
-VSup
 Wire Wire Line
-	13050 5550 13300 5550
-Wire Wire Line
-	13300 5550 13300 5500
-Connection ~ 13300 5550
-Wire Wire Line
-	13300 5550 13450 5550
+	1040 2300 1040 2190
 $Comp
-L NixieClockMaster:PWR_FLAG #FLG0103
-U 1 1 5F79CC82
-P 13300 5500
-F 0 "#FLG0103" H 13300 5765 50  0000 C CNN
-F 1 "PWR_FLAG" H 13300 5674 50  0000 C CNN
-F 2 "" H 13300 5500 50  0001 C CNN
-F 3 "" H 13300 5500 50  0001 C CNN
-	1    13300 5500
+L Connector_Generic:Conn_01x03 J2
+U 1 1 60D00DAD
+P 1790 8050
+F 0 "J2" H 1708 7725 50  0000 C CNN
+F 1 "EXT_LED_OUT" H 1708 7816 50  0000 C CNN
+F 2 "NixieClockMaster:Header_MA03-1_Small" H 1790 8050 50  0001 C CNN
+F 3 "~" H 1790 8050 50  0001 C CNN
+	1    1790 8050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 8150 1990 8150
+Wire Wire Line
+	2250 7850 2600 7850
+Wire Wire Line
+	1990 7950 2250 7950
+Wire Wire Line
+	2250 7950 2250 7850
+Wire Wire Line
+	1990 8050 2250 8050
+Wire Wire Line
+	2250 8050 2250 8400
+Wire Wire Line
+	2250 8400 2600 8400
+Connection ~ 2600 8400
+$Comp
+L NixieClockMaster:CD40109 U6
+U 1 1 60E3E0F2
+P 2590 2610
+F 0 "U6" H 2590 3214 45  0000 C CNN
+F 1 "CD40109" H 2590 3130 45  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2620 2760 20  0001 C CNN
+F 3 "" H 2590 2610 50  0001 C CNN
+	1    2590 2610
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	3850 480  3850 4700
 $EndSCHEMATC
