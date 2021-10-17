@@ -1063,9 +1063,9 @@ Text Label 14950 8400 2    60   ~ 0
 DATA1_3V3
 Text Label 14950 8500 2    60   ~ 0
 CLK_3V3
-Text Label 14950 8600 2    60   ~ 0
-LATCH_3V3
 Text Label 14950 8700 2    60   ~ 0
+LATCH_3V3
+Text Label 14950 8600 2    60   ~ 0
 BLANK_3V3
 Wire Wire Line
 	6650 5550 6900 5550
